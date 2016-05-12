@@ -12,9 +12,9 @@
 #
 # Hints:
 # Dependings on platforms you have to call this playbook with something like this:
-#  ansible-playbook  -i inventory AnsibleBootstrap.yml --limit INFRA-WEB-12 --ask-pass --become --become-user=root --ask-become-pass --become-method=su
-#  ansible-playbook  -i inventory AnsibleBootstrap.yml --limit INFRA-NODE-30 --ask-pass
-#  ansible-playbook -i inventory AnsibleBootstrap.yml --limit=INFRA-PMX-03 -u aliasroot --ask-pass 
+#  ansible-playbook  -i inventory AnsibleBootstrap.yml --limit target-server-12 --ask-pass --become --become-user=root --ask-become-pass --become-method=su
+#  ansible-playbook  -i inventory AnsibleBootstrap.yml --limit target-server-30 --ask-pass
+#  ansible-playbook -i inventory AnsibleBootstrap.yml --limit target-server-03 -u aliasroot --ask-pass 
 # Read carrefully http://docs.ansible.com/ansible/become.html#become-privilege-escalation to understand each parameters
 
 - name: Target server Ansibilization
