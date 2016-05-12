@@ -1,6 +1,6 @@
 ---
 #
-# Copyright (C) 2016 Jean-Louis FEREY
+# Copyright (C) 2016 Jean-Louis FEREY <jeanlouis.ferey@orange.com>
 #
 # This software is distributed under the terms and conditions of the 'Apache-2.0'
 # license which can be found in the file 'LICENSE.txt' in this package distribution
@@ -61,4 +61,3 @@
   - name: copy deploy ssh key
     authorized_key: user=deploy key="{{ lookup('file', '/home/deploy/.ssh/id_rsa.pub') }}"
     tags: key
-    
